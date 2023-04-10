@@ -3,4 +3,5 @@ public class Hogwarts {
     private int tgres;
 
     //public Hogwarts()
+
 }
