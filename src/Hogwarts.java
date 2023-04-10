@@ -2,6 +2,11 @@ public class Hogwarts {
     private int spell;
     private int tgres;
 
-    //public Hogwarts()
+    public Hogwarts(int spell, int tgres) {
+        this.spell = spell;
+        this.tgres = tgres;
+    }
+
+
 
 }
