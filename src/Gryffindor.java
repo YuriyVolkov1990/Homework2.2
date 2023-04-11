@@ -11,5 +11,9 @@ public class Gryffindor extends Hogwarts {
         this.honor = honor;
         this.bravery = bravery;
     }
+    public String getFulldata() {
+        return this.name + ": Благородство: " + this.nobility + "; Честь: " + this.honor + "; Храбрость: " + this.bravery + "" + ;
+    }
+
 
 }
