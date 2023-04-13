@@ -13,7 +13,7 @@ public class Gryffindor extends Hogwarts {
     }
 
     public String getFulldata() {
-        return name.toString() + '\n' + "Благородство: " + nobility + '\n' + "Честь: " + + honor + '\n' + "Храбрость: " + bravery + '\n' + "Колдунство:" + Hogwarts.spell + '\n' + "Трансгрессия:" + Hogwarts.tgres;
+        return name + '\n' + "Благородство: " + nobility + '\n' + "Честь: " + + honor + '\n' + "Храбрость: " + bravery + '\n' + "Колдунство:" + Hogwarts.spell + '\n' + "Трансгрессия:" + Hogwarts.tgres;
     }
 
 
