@@ -1,8 +1,8 @@
 public class Gryffindor extends Hogwarts {
-    private String name;
-    private int nobility;
-    private int honor;
-    private int bravery;
+    private final String name;
+    private final int nobility;
+    private final int honor;
+    private final int bravery;
 
     public Gryffindor(String name, int nobility, int honor, int bravery, int spell, int tgres) {
         super(spell, tgres);
@@ -13,7 +13,7 @@ public class Gryffindor extends Hogwarts {
     }
 
     public String getFulldata() {
-        return name + '\n' + "Благородство: " + nobility + '\n' + "Честь: " + + honor + '\n' + "Храбрость: " + bravery + '\n' + "Колдунство:" + Hogwarts.spell + '\n' + "Трансгрессия:" + Hogwarts.tgres;
+        return name + '\n' + "Благородство: " + nobility + '\n' + "Честь: " + + honor + '\n' + "Храбрость: " + bravery + '\n' + "Колдунство: " + Hogwarts.spell + '\n' + "Трансгрессия: " + Hogwarts.tgres;
     }
 
 
