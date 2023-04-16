@@ -13,7 +13,7 @@ public class Gryffindor extends Hogwarts {
     }
 
     @Override
-    public String getFulldata() {
+    public String getFullData() {
         return name + '\n' + "Благородство: " + nobility + '\n' + "Честь: " + + honor + '\n' + "Храбрость: " + bravery + '\n' + "Колдунство: " + Hogwarts.spell + '\n' + "Трансгрессия: " + Hogwarts.tgres;
     }
 
