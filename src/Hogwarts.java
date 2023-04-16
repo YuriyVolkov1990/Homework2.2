@@ -1,4 +1,4 @@
-public class Hogwarts {
+public abstract class Hogwarts {
     static int spell;
     static int tgres;
 
