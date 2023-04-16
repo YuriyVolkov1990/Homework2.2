@@ -18,6 +18,13 @@ public abstract class Hogwarts {
         } else {
             System.out.println("Мощность колдуства " + studentOne.name + " и " + studentTwo.name + " одинаковая");
         }
+        if (studentOne.tgres > studentTwo.tgres) {
+            System.out.println(studentOne.name + " обладает большим расстоянием трансгрессии, чем " + studentTwo.name);
+        } else if (studentOne.tgres < studentTwo.tgres) {
+            System.out.println(studentTwo.name + " обладает большим расстоянием трансгрессии, чем " + studentOne.name);
+        } else {
+            System.out.println("Расстояние трансгрессии " + studentOne.name + " и " + studentTwo.name + " одинаковая");
+        }
     }
 
 }
