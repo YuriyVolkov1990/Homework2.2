@@ -21,7 +21,7 @@ public class Gryffindor extends Hogwarts {
         return nobility + honor + bravery;
     }
 
-    public static void getCompareGryffindor(Gryffindor studentOne, Gryffindor studentTwo) {
+    public static void getCompare(Gryffindor studentOne, Gryffindor studentTwo) {
         if (studentOne.getSumPropertys() > studentTwo.getSumPropertys()) {
             System.out.println(studentOne.name + " лучший Гриффиндорец, чем " + studentTwo.name);
         } else {

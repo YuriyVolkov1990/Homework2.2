@@ -24,7 +24,7 @@ public class Slytherin extends Hogwarts {
         return cunning + resolve + ambition + adroitness + lustForPower;
     }
 
-    public static void getCompareSlytherin(Slytherin studentOne, Slytherin studentTwo) {
+    public static void getCompare(Slytherin studentOne, Slytherin studentTwo) {
         if (studentOne.getSumPropertys() > studentTwo.getSumPropertys()) {
             System.out.println(studentOne.name + " лучший Слизеринец, чем " + studentTwo.name);
         } else {
