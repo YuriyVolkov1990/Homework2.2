@@ -13,4 +13,9 @@ public class Slytherin extends Hogwarts {
         this.adroitness =adroitnes;
         this.lustForPower = lustForPower;
     }
+
+    @Override
+    public String getFulldata() {
+        return null;
+    }
 }

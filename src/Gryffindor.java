@@ -12,9 +12,14 @@ public class Gryffindor extends Hogwarts {
         this.bravery = bravery;
     }
 
+    @Override
     public String getFulldata() {
         return name + '\n' + "Благородство: " + nobility + '\n' + "Честь: " + + honor + '\n' + "Храбрость: " + bravery + '\n' + "Колдунство: " + Hogwarts.spell + '\n' + "Трансгрессия: " + Hogwarts.tgres;
     }
+
+//    public String getFulldata() {
+//        return name + '\n' + "Благородство: " + nobility + '\n' + "Честь: " + + honor + '\n' + "Храбрость: " + bravery + '\n' + "Колдунство: " + Hogwarts.spell + '\n' + "Трансгрессия: " + Hogwarts.tgres;
+//    }
 
 
 }

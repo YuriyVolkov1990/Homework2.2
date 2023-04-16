@@ -9,4 +9,9 @@ public class Hufflepuff extends Hogwarts {
         this.loyalty = loyalty;
         this.honesty = honesty;
     }
+
+    @Override
+    public String getFulldata() {
+        return null;
+    }
 }

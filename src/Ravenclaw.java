@@ -9,4 +9,9 @@ public class Ravenclaw extends Hogwarts {
         this.wisdom = wisdom;
         this.creation = creation;
     }
+
+    @Override
+    public String getFulldata() {
+        return null;
+    }
 }

@@ -7,6 +7,5 @@ public abstract class Hogwarts {
         Hogwarts.tgres = tgres;
     }
 
-
-
+    public abstract String getFulldata();
 }
