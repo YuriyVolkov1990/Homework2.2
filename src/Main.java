@@ -23,5 +23,6 @@ public class Main {
         Ravenclaw.getCompare((Ravenclaw) chzhowChang, (Ravenclaw) padmaPatil);
         Slytherin.getCompare((Slytherin) dracoMalfoy, (Slytherin) grahamMontegy);
         Hogwarts.getCompareGeneral(garryPotter,dracoMalfoy);
+
     }
 }

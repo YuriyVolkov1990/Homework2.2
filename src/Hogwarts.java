@@ -19,4 +19,5 @@ public abstract class Hogwarts {
             System.out.println("Мощность колдуства " + studentOne.name + " и " + studentTwo.name + " одинаковая");
         }
     }
+
 }
