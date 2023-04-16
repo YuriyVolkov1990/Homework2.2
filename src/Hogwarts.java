@@ -13,6 +13,10 @@ public abstract class Hogwarts {
     public static void getCompareGeneral (Hogwarts studentOne, Hogwarts studentTwo) {
         if (studentOne.spell > studentTwo.spell) {
             System.out.println(studentOne.name + " обладает большей мощностью колдунства, чем " + studentTwo.name);
-        } else {System.out.println(studentTwo.name + " обладает большей мощностью колдунства, чем " + studentOne.name);}
+        } else if (studentOne.spell < studentTwo.spell) {
+            System.out.println(studentTwo.name + " обладает большей мощностью колдунства, чем " + studentOne.name);
+        } else {
+            System.out.println("Мощность колдуства " + studentOne.name + " и " + studentTwo.name + " одинаковая");
+        }
     }
 }
