@@ -25,4 +25,5 @@ public class Hufflepuff extends Hogwarts {
             System.out.println(studentTwo.name + " лучший Пуффендуец, чем " + studentOne.name);
         }
     }
+
 }

@@ -26,4 +26,5 @@ public class Gryffindor extends Hogwarts {
             System.out.println(studentTwo.name + " лучший Гриффиндорец, чем " + studentOne.name);
         }
     }
+
 }

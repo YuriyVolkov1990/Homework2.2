@@ -26,5 +26,6 @@ public class Ravenclaw extends Hogwarts {
         } else {
             System.out.println(studentTwo.name + " лучший Когтевранец, чем " + studentOne.name);
         }
+
     }
 }
