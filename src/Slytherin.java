@@ -18,6 +18,6 @@ public class Slytherin extends Hogwarts {
 
     @Override
     public String getFullData() {
-        return name + '\n' + "Ум: " + cunning + '\n' + "Мудрость: " + resolve + '\n' + "Остроумие: " + ambition + '\n' + "Творчество: " + adroitness + '\n' + "Жажда власти:" + lustForPower + '\n' + "Колдунство: " + Hogwarts.spell + '\n' + "Трансгрессия: " + Hogwarts.tgres;
+        return name + '\n' + "Хитрость: " + cunning + '\n' + "Решительность: " + resolve + '\n' + "Амбициозность: " + ambition + '\n' + "Находчивость: " + adroitness + '\n' + "Жажда власти:" + lustForPower + '\n' + "Колдунство: " + Hogwarts.spell + '\n' + "Трансгрессия: " + Hogwarts.tgres;
     }
 }

@@ -13,5 +13,11 @@ public class Main {
         System.out.println("Студент: " + sedrikDiggory.getFullData());
         Hufflepuff justinFinch = new Hufflepuff("Джастин Финч-Флетчли", 80, 80, 80, 90, 70);
         System.out.println("Студент: " + justinFinch.getFullData());
+        Slytherin dracoMalfoy = new Slytherin("Драко Малфой", 95, 95, 95, 95, 100, 90, 90);
+        System.out.println("Студент: " + dracoMalfoy.getFullData());
+        Slytherin grahamMontegy = new Slytherin("Грэхэм Монтегю", 80, 80, 80, 80, 100, 80, 80);
+        System.out.println("Студент: " + grahamMontegy.getFullData());
+        Slytherin gregoryGoil = new Slytherin("Грегори Гойл", 70, 70, 70, 70, 80, 80, 80);
+        System.out.println("Студент: " + gregoryGoil.getFullData());
     }
 }
