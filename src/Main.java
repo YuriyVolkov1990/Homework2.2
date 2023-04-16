@@ -10,7 +10,7 @@ public class Main {
         Hogwarts chzhowChang = new Ravenclaw("Чжоу Чанг", 90,70,70,90,100,90);
         Hogwarts padmaPatil = new Ravenclaw("Падма Патил", 90,80,80,90,80,90);
         Hogwarts marcusBelby = new Ravenclaw("Маркус Белби", 100,70,80,90,90,100);
-        Hogwarts dracoMalfoy = new Slytherin("Драко Малфой", 95, 95, 95, 95, 100, 90, 90);
+        Hogwarts dracoMalfoy = new Slytherin("Драко Малфой", 95, 95, 95, 95, 100, 100, 90);
         Hogwarts grahamMontegy = new Slytherin("Грэхэм Монтегю", 100, 100, 100, 100, 100, 80, 80);
         Hogwarts gregoryGoil = new Slytherin("Грегори Гойл", 70, 70, 70, 70, 80, 80, 80);
         Hogwarts[] students = {garryPotter, germionaGranger, ronWeasley, zahariaSmith, sedrikDiggory, justinFinch, chzhowChang,  padmaPatil, marcusBelby, dracoMalfoy, grahamMontegy, gregoryGoil};
@@ -22,5 +22,6 @@ public class Main {
         Hufflepuff.getCompare((Hufflepuff) zahariaSmith, (Hufflepuff) sedrikDiggory);
         Ravenclaw.getCompare((Ravenclaw) chzhowChang, (Ravenclaw) padmaPatil);
         Slytherin.getCompare((Slytherin) dracoMalfoy, (Slytherin) grahamMontegy);
+        Hogwarts.getCompareGeneral(garryPotter,dracoMalfoy);
     }
 }
