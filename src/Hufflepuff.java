@@ -16,4 +16,15 @@ public class Hufflepuff extends Hogwarts {
     public String getFullData() {
         return name + '\n' + "Трудолюбие: " + diligence + '\n' + "Верность: " + + loyalty + '\n' + "Честность: " + honesty + '\n' + "Колдунство: " + Hogwarts.spell + '\n' + "Трансгрессия: " + Hogwarts.tgres;
     }
+    public int getSumPropertys() {
+        return diligence + loyalty + honesty;
+    }
+
+    public static void getCompareHufflepuff(Hufflepuff studentOne, Hufflepuff studentTwo) {
+        if (studentOne.getSumPropertys() > studentTwo.getSumPropertys()) {
+            System.out.println(studentOne.name + " лучший Пуффендуец, чем " + studentTwo.name);
+        } else {
+            System.out.println(studentTwo.name + " лучший Пуффендуец, чем " + studentOne.name);
+        }
+    }
 }

@@ -8,4 +8,6 @@ public abstract class Hogwarts {
     }
 
     public abstract String getFullData();
+
+
 }

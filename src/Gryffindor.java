@@ -14,6 +14,18 @@ public class Gryffindor extends Hogwarts {
 
     @Override
     public String getFullData() {
-        return name + '\n' + "Благородство: " + nobility + '\n' + "Честь: " + + honor + '\n' + "Храбрость: " + bravery + '\n' + "Колдунство: " + Hogwarts.spell + '\n' + "Трансгрессия: " + Hogwarts.tgres;
+        return name + '\n' + "Благородство: " + nobility + '\n' + "Честь: " + +honor + '\n' + "Храбрость: " + bravery + '\n' + "Колдунство: " + Hogwarts.spell + '\n' + "Трансгрессия: " + Hogwarts.tgres;
+    }
+
+    public int getSumPropertys() {
+        return nobility + honor + bravery;
+    }
+
+    public static void getCompareGryffindor(Gryffindor studentOne, Gryffindor studentTwo) {
+        if (studentOne.getSumPropertys() > studentTwo.getSumPropertys()) {
+            System.out.println(studentOne.name + " лучший Гриффиндорец, чем " + studentTwo.name);
+        } else {
+            System.out.println(studentTwo.name + " лучший Гриффиндорец, чем " + studentOne.name);
+        }
     }
 }

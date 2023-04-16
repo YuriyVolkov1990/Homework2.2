@@ -18,4 +18,15 @@ public class Ravenclaw extends Hogwarts {
     public String getFullData() {
         return  name + '\n' + "Ум: " + mind + '\n' + "Мудрость: " + wisdom + '\n' + "Остроумие: " + wit + '\n' + "Творчество: " + creation + '\n' + "Колдунство: " + Hogwarts.spell + '\n' + "Трансгрессия: " + Hogwarts.tgres;
     }
+    public int getSumPropertys() {
+        return mind + wisdom + wit + creation;
+    }
+
+    public static void getCompareRavenclaw(Ravenclaw studentOne, Ravenclaw studentTwo) {
+        if (studentOne.getSumPropertys() > studentTwo.getSumPropertys()) {
+            System.out.println(studentOne.name + " лучший Когтевранец, чем " + studentTwo.name);
+        } else {
+            System.out.println(studentTwo.name + " лучший Когтевранец, чем " + studentOne.name);
+        }
+    }
 }
