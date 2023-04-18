@@ -11,9 +11,16 @@ public class Hufflepuff extends Hogwarts {
     }
 
     @Override
-    public String getFullData() {
-        return name + '\n' + "Трудолюбие: " + diligence + '\n' + "Верность: " + + loyalty + '\n' + "Честность: " + honesty + '\n' + "Колдунство: " + spell + '\n' + "Трансгрессия: " + tgres;
+    public String toString() {
+        return "факультета Hufflepuff" + '\n' +
+                "name=" + name + '\n' +
+                "diligence=" + diligence + '\n' +
+                "loyalty=" + loyalty + '\n' +
+                "honesty=" + honesty + '\n' +
+                "spell=" + spell + '\n' +
+                "tgres=" + tgres;
     }
+
     public int getSumPropertys() {
         return diligence + loyalty + honesty;
     }

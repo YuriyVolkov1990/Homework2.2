@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello Hogwarts!");
-        Hogwarts garryPotter = new Gryffindor("Гарри Поттер", 90, 80,100,100,100);
+        Hogwarts garryPotter = new Gryffindor("Гарри Поттер", 0, 0,0,100,100);
         Hogwarts germionaGranger = new Gryffindor("Гермиона Грейнджер",80,80,100,100,80);
         Hogwarts ronWeasley = new Gryffindor("Рон Уизли", 70, 100, 90,80,80);
         Hogwarts zahariaSmith = new Hufflepuff("Захария Смит", 100,90,80, 100, 70);
@@ -16,7 +16,7 @@ public class Main {
         Hogwarts[] students = {garryPotter, germionaGranger, ronWeasley, zahariaSmith, sedrikDiggory, justinFinch, chzhowChang,  padmaPatil, marcusBelby, dracoMalfoy, grahamMontegy, gregoryGoil};
         for (Hogwarts student:
              students) {
-            System.out.println("Студент: " + student.getFullData());
+            System.out.println("Студент " + student.toString());
         }
         Gryffindor.getCompare((Gryffindor) garryPotter, (Gryffindor) germionaGranger);
         Hufflepuff.getCompare((Hufflepuff) zahariaSmith, (Hufflepuff) sedrikDiggory);

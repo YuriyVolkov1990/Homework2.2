@@ -1,7 +1,7 @@
 public abstract class Hogwarts {
-    String name;
-    int spell;
-    int tgres;
+    protected String name;
+    protected int spell;
+    protected int tgres;
 
     public Hogwarts(String name, int spell, int tgres) {
        this.name = name;
@@ -9,7 +9,6 @@ public abstract class Hogwarts {
        this.tgres = tgres;
     }
 
-    public abstract String getFullData();
     public static void getCompareGeneral (Hogwarts studentOne, Hogwarts studentTwo) {
         if (studentOne.spell > studentTwo.spell) {
             System.out.println(studentOne.name + " обладает большей мощностью колдунства, чем " + studentTwo.name);
