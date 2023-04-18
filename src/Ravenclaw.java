@@ -28,11 +28,11 @@ public class Ravenclaw extends Hogwarts {
         return mind + wisdom + wit + creation;
     }
 
-    public static void getCompare(Ravenclaw studentOne, Ravenclaw studentTwo) {
-        if (studentOne.getSumPropertys() > studentTwo.getSumPropertys()) {
-            System.out.println(studentOne.name + " лучший Когтевранец, чем " + studentTwo.name);
+    public void getCompare(Ravenclaw studentOne) {
+        if (studentOne.getSumPropertys() > this.getSumPropertys()) {
+            System.out.println(studentOne.name + " лучший Когтевранец, чем " + this.name);
         } else {
-            System.out.println(studentTwo.name + " лучший Когтевранец, чем " + studentOne.name);
+            System.out.println(this.name + " лучший Когтевранец, чем " + studentOne.name);
         }
 
     }

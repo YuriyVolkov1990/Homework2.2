@@ -18,11 +18,11 @@ public class Main {
              students) {
             System.out.println("Студент " + student.toString());
         }
-        Gryffindor.getCompare((Gryffindor) garryPotter, (Gryffindor) germionaGranger);
-        Hufflepuff.getCompare((Hufflepuff) zahariaSmith, (Hufflepuff) sedrikDiggory);
-        Ravenclaw.getCompare((Ravenclaw) chzhowChang, (Ravenclaw) padmaPatil);
-        Slytherin.getCompare((Slytherin) dracoMalfoy, (Slytherin) grahamMontegy);
-        Hogwarts.getCompareGeneral(garryPotter,dracoMalfoy);
+        ((Gryffindor) garryPotter).getCompare((Gryffindor) germionaGranger);
+        ((Hufflepuff) zahariaSmith).getCompare((Hufflepuff) sedrikDiggory);
+        ((Ravenclaw) chzhowChang).getCompare((Ravenclaw) padmaPatil);
+        ((Slytherin) dracoMalfoy).getCompare((Slytherin) grahamMontegy);
+        garryPotter.getCompareGeneral(dracoMalfoy);
 
     }
 }

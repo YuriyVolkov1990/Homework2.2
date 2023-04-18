@@ -9,20 +9,20 @@ public abstract class Hogwarts {
        this.tgres = tgres;
     }
 
-    public static void getCompareGeneral (Hogwarts studentOne, Hogwarts studentTwo) {
-        if (studentOne.spell > studentTwo.spell) {
-            System.out.println(studentOne.name + " обладает большей мощностью колдунства, чем " + studentTwo.name);
-        } else if (studentOne.spell < studentTwo.spell) {
-            System.out.println(studentTwo.name + " обладает большей мощностью колдунства, чем " + studentOne.name);
+    public void getCompareGeneral (Hogwarts studentOne) {
+        if (studentOne.spell > this.spell) {
+            System.out.println(studentOne.name + " обладает большей мощностью колдунства, чем " + this.name);
+        } else if (studentOne.spell < this.spell) {
+            System.out.println(this.name + " обладает большей мощностью колдунства, чем " + studentOne.name);
         } else {
-            System.out.println("Мощность колдуства " + studentOne.name + " и " + studentTwo.name + " одинаковая");
+            System.out.println("Мощность колдуства " + studentOne.name + " и " + this.name + " одинаковая");
         }
-        if (studentOne.tgres > studentTwo.tgres) {
-            System.out.println(studentOne.name + " обладает большим расстоянием трансгрессии, чем " + studentTwo.name);
-        } else if (studentOne.tgres < studentTwo.tgres) {
-            System.out.println(studentTwo.name + " обладает большим расстоянием трансгрессии, чем " + studentOne.name);
+        if (studentOne.tgres > this.tgres) {
+            System.out.println(studentOne.name + " обладает большим расстоянием трансгрессии, чем " + this.name);
+        } else if (studentOne.tgres < this.tgres) {
+            System.out.println(this.name + " обладает большим расстоянием трансгрессии, чем " + studentOne.name);
         } else {
-            System.out.println("Расстояние трансгрессии " + studentOne.name + " и " + studentTwo.name + " одинаковая");
+            System.out.println("Расстояние трансгрессии " + studentOne.name + " и " + this.name + " одинаковая");
         }
     }
 

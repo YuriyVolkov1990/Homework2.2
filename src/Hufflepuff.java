@@ -25,11 +25,11 @@ public class Hufflepuff extends Hogwarts {
         return diligence + loyalty + honesty;
     }
 
-    public static void getCompare(Hufflepuff studentOne, Hufflepuff studentTwo) {
-        if (studentOne.getSumPropertys() > studentTwo.getSumPropertys()) {
-            System.out.println(studentOne.name + " лучший Пуффендуец, чем " + studentTwo.name);
+    public void getCompare(Hufflepuff studentOne) {
+        if (studentOne.getSumPropertys() > this.getSumPropertys()) {
+            System.out.println(studentOne.name + " лучший Пуффендуец, чем " + this.name);
         } else {
-            System.out.println(studentTwo.name + " лучший Пуффендуец, чем " + studentOne.name);
+            System.out.println(this.name + " лучший Пуффендуец, чем " + studentOne.name);
         }
     }
 
