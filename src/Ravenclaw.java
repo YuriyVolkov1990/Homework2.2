@@ -13,18 +13,27 @@ public class Ravenclaw extends Hogwarts {
     }
 
     @Override
-    public String getFullData() {
-        return name + '\n' + "Ум: " + mind + '\n' + "Мудрость: " + wisdom + '\n' + "Остроумие: " + wit + '\n' + "Творчество: " + creation + '\n' + "Колдунство: " + spell + '\n' + "Трансгрессия: " + tgres;
+    public String toString() {
+        return "факультета Ravenclaw" + '\n' +
+                "name='" + name + '\n' +
+                "mind=" + mind + '\n' +
+                "wisdom=" + wisdom + '\n' +
+                "wit=" + wit + '\n' +
+                "creation=" + creation + '\n' +
+                "spell=" + spell + '\n' +
+                "tgres=" + tgres;
     }
+
     public int getSumPropertys() {
         return mind + wisdom + wit + creation;
     }
 
-    public static void getCompare(Ravenclaw studentOne, Ravenclaw studentTwo) {
-        if (studentOne.getSumPropertys() > studentTwo.getSumPropertys()) {
-            System.out.println(studentOne.name + " лучший Когтевранец, чем " + studentTwo.name);
+    public void getCompare(Ravenclaw studentOne) {
+        if (studentOne.getSumPropertys() > this.getSumPropertys()) {
+            System.out.println(studentOne.name + " лучший Когтевранец, чем " + this.name);
         } else {
-            System.out.println(studentTwo.name + " лучший Когтевранец, чем " + studentOne.name);
+            System.out.println(this.name + " лучший Когтевранец, чем " + studentOne.name);
         }
+
     }
 }

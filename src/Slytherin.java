@@ -16,18 +16,28 @@ public class Slytherin extends Hogwarts {
     }
 
     @Override
-    public String getFullData() {
-        return name + '\n' + "Хитрость: " + cunning + '\n' + "Решительность: " + resolve + '\n' + "Амбициозность: " + ambition + '\n' + "Находчивость: " + adroitness + '\n' + "Жажда власти:" + lustForPower + '\n' + "Колдунство: " + spell + '\n' + "Трансгрессия: " + tgres;
+    public String toString() {
+        return "факультета Slytherin" + '\n' +
+                "name=" + name + '\n' +
+                "cunning=" + cunning + '\n' +
+                "resolve=" + resolve + '\n' +
+                "ambition=" + ambition + '\n' +
+                "adroitness=" + adroitness + '\n' +
+                "lustForPower=" + lustForPower + '\n' +
+                "spell=" + spell + '\n' +
+                "tgres=" + tgres;
     }
+
     public int getSumPropertys() {
         return cunning + resolve + ambition + adroitness + lustForPower;
     }
 
-    public static void getCompare(Slytherin studentOne, Slytherin studentTwo) {
-        if (studentOne.getSumPropertys() > studentTwo.getSumPropertys()) {
-            System.out.println(studentOne.name + " лучший Слизеринец, чем " + studentTwo.name);
+    public void getCompare(Slytherin studentOne) {
+        if (studentOne.getSumPropertys() > this.getSumPropertys()) {
+            System.out.println(studentOne.name + " лучший Слизеринец, чем " + this.name);
         } else {
-            System.out.println(studentTwo.name + " лучший Слизеринец, чем " + studentOne.name);
+            System.out.println(this.name + " лучший Слизеринец, чем " + studentOne.name);
         }
     }
+
 }
